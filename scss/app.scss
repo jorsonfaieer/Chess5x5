@@ -1,0 +1,39 @@
+@use '_reset';
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container__tablero{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 31.875rem;
+}
+.tablero__casilla{
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: .0625rem;
+    padding: .625rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tablero__casilla:nth-child(1n){
+    background-color: #EED09D;
+}
+.tablero__casilla:nth-child(2n){
+    background-color: #804000;
+}
+
+.pieza{
+    object-fit: contain;
+    max-height: 80%;
+    max-width: 80%;
+}
+.pieza:hover{
+    scale: 1.1;
+}
